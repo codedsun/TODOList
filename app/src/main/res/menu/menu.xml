@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:showAsAction="always"
+        android:icon="@drawable/add_list"
+        android:title="Add An Item"/>
+    <item
+        android:title="Refresh"
+        android:id="@+id/refresh"/>
+
+    <item
+        android:title="Like Us"
+        android:tooltipText="@string/app_name"
+        />
+
+</menu>

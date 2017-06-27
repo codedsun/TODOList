@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.suneet.lecture7hw.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/todoitem"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:id="@+id/add"
+            android:layout_gravity="center"
+            android:background="@drawable/add_item"/>
+        <ImageButton
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:id="@+id/remove_item"
+            android:paddingLeft="10sp"
+            android:layout_gravity="center"
+            android:background="@drawable/remove_item"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteMe"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/thrash"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:text="Developed by Suneet Srivastava ©"/>
+</LinearLayout>
